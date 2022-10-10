@@ -1,4 +1,7 @@
 package com.example.lib;
 
-public class lesson5 {
+public class MyClass {
+
+
+
 }
