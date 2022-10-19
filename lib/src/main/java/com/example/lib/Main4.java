@@ -1,20 +1,25 @@
 package com.example.lib;
 
-import java.util.Scanner;
+import java.util.HashSet;
 
 public class Main4 {
+    public static void main(String[] args) {
+        HashSet<Student> hashSet = new HashSet<Student>();
+        hashSet.add(new Student("Olya"));
+        hashSet.add(new Student("Olya"));
+        hashSet.add(new Student("Dante"));
+        hashSet.add(new Student("Vergel"));
 
-    public static void main(String[] args){
-        Scanner scanner= new Scanner(System.in);
-        System.out.println("Enter you number: ");
-        if(scanner.hasNextInt()){
-            int enteredValue = scanner.nextInt();
-            System.out.println("your value is " + enteredValue);
-        }else {
-            System.out.println("your inout value is wrong ");
-        }
 
-        int enteredValue = scanner.nextInt();
-        System.out.println(" your value is: " + enteredValue);
+        System.out.println(hashSet.size());
     }
+}
+class Student{
+    private String name;
+
+    Student(String name) {
+        this.name = name;
+
+    }
+
 }
